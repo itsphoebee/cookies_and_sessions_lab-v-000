@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   end
 
   def add
+    raise params.inspect
     cart << params[:product]
   end
 end
