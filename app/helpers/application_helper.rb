@@ -1,7 +1,8 @@
 module ApplicationHelper
 
   def cart
-    session[:cart] ||= []
+    cart = session[:cart] ||= []
+    session[:cart] = cart
   end
-  
+
 end
