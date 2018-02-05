@@ -4,6 +4,6 @@ class ProductsController < ApplicationController
   end
 
   def add
-    @cart << params[:product]
+    cart << params[:product]
   end
 end
