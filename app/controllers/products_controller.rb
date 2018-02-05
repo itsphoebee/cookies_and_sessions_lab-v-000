@@ -5,7 +5,7 @@ class ProductsController < ApplicationController
 
   def add
     #raise params.inspect
-    cart << params[:product]
+    cart << params[:name]
     render "index"
   end
 end
