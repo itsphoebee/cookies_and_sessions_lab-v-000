@@ -3,3 +3,8 @@
     <li><%= product %></li>
   <% end %>
 </ul>
+
+<%= form_tag({controller: 'products', action: 'add', method: 'post'}) do %>
+  <input name="product">
+  <%= submit_tag 'Save' %
+<% end %>
