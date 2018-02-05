@@ -1,3 +1,5 @@
-<% @cart.each do |item| %>
-  <%= item.name %>
+<% if !@cart.empty? %>
+  <% @cart.each do |item| %>
+    <%= item.name %>
+  <% end %>
 <% end %>
